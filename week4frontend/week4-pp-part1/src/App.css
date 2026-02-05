@@ -20,11 +20,27 @@ body {
 
 .app-container h1 {
   color: #2c3e50;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 28px;
 }
 
-.app-container p {
-  color: #7f8c8d;
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 12px 15px;
   font-size: 16px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
