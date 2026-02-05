@@ -16,6 +16,15 @@ function BookCollectionManager() {
     setAuthor(event.target.value);
   }
 
+  // Add a new book to the list
+  function addBook() {
+    if (title.trim() !== "" && author.trim() !== "") {
+      setBooks((b) => [...b, { title, author }]);
+      setTitle("");
+      setAuthor(""); // Clear the input fields
+    }
+  }
+
   return (
     <div className="app-container">
       <h1>Book Collection Manager</h1>
@@ -35,6 +44,9 @@ function BookCollectionManager() {
           onChange={handleAuthorChange}
           className="input-field"
         />
+        <button onClick={addBook} className="add-button">
+          Add Book
+        </button>
       </div>
     </div>
   );

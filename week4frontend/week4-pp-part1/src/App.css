@@ -44,3 +44,23 @@ body {
   border-color: #3498db;
   box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
+
+.add-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.add-button:hover {
+  background-color: #229954;
+}
+
+.add-button:active {
+  transform: scale(0.98);
+}
